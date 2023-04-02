@@ -1,0 +1,146 @@
+.g_button {
+    background-color: #303134;
+    border: none;
+    color: white;
+    border-radius: 0.3rem;
+    min-width: 120px;
+    min-height: 40px;
+    max-height: 40px;
+
+}
+
+.g_button:hover {
+    cursor: pointer;
+    border: 1px solid;
+    border-color: #636363;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+body {
+    background-color: #202124;
+}
+
+%flex_box_base_case {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: none;
+}
+
+.flex_box_buttons {
+    @extend %flex_box_base_case;
+    gap: 5%;
+}
+
+
+.flex_box_search {
+    @extend %flex_box_base_case;
+    max-width: 100%;
+    border-style: solid;
+    border-radius: 1.6rem;
+    border: 1px solid #5f6368;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    justify-content: flex-start;
+    padding: 6px 0px;
+    gap: 1%;
+    max-height: 30px;
+}
+
+.flex_box_search:hover {
+    background-color: #303134;
+    box-shadow: 0 1px 6px 0 #171717;
+    border-color: rgba(223, 225, 229, 0);
+}
+
+#search_style {
+    border-radius: 1.6rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    width: 90%;
+}
+
+.flex_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 13px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    font-family: arial, sans-serif;
+}
+
+#glogo {
+    max-width: 300px;
+}
+
+
+#spacing {
+    height: calc(100vh - 600px);
+    max-height: 250px;
+}
+
+.sheesh {
+    max-width: 100%;
+    min-width: 570px;
+    display: flex;
+    background-color: red;
+} 
+
+#picture_text{
+    color: #4487f6;
+    transform: translate(115px, 35px);
+    position: absolute;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+}
+
+#logo_small{
+    max-width: 74px;
+}
+
+.flex_links_advanced{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    a {
+        min-width: 120px;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    font-family: arial, sans-serif;
+}
+.flex_logo{
+    display:flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    width: 95vw;
+}
+
+#forma {
+    max-width: 100%;
+    width: 600px;
+  }
